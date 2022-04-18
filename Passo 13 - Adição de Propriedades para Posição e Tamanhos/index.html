@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Parte-se do principio o usu de JQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/CanvasObjects.js"></script>
+    <script src="js/Helpers.js"></script>
+    <script src="js/canvasBuilder.js"></script>
+    <script src="js/DynamicElementManagment.js"></script>
+    <script src="js/TextFontControl.js"></script>
+    <script src="js/ExternalAttributeChange.js"></script>
+</head>
+
+<body>
+    <canvas id="canvasTeste" width="1000" height="300" style="border: 1px solid black; display: block;"></canvas>
+
+    <br />
+    <input type="button" id="adicionarQuadrado" value="Adicionar Quadrado" />
+    <br />
+    <br />
+    <div>
+        Fonte do Texto:
+        <select id="FonteTexto" valueFor="textFont">
+            <option value="sans-serif">Sans-Serif</option>
+            <option value="black">Preto</option>
+            <option value="red">Vermelho</option>
+        </select>
+    </div>
+    <br />
+    <div>
+        Tamanho da Fonte:
+        <input id="TamanhoTexto" type="number" valueFor="fontSize" value="10"/>
+    </div>
+
+    <div style="display: inline; background-color: blue;">
+        <div>
+            <h2>Editor de Atributos do Elemento</h2>
+        </div>
+        <div>
+            Posição X:
+            <input id="PosicaoX" type="number" valueFor="X" />
+        </div>
+        <br />
+        <div>
+            Posição Y:
+            <input id="PosicaoY" type="number" valueFor="Y" />
+        </div>
+        <br />
+        <div>
+            Largura:
+            <input id="Largura" type="number" valueFor="width" />
+        </div>
+        <br />
+        <div>
+            Altura:
+            <input id="Altura" type="number" valueFor="height" />
+        </div>
+        <br />
+        <div>
+            Cor:
+            <select id="Cor" valueFor="color">
+                <option value="blue">Azul</option>
+                <option value="black">Preto</option>
+                <option value="red">Vermelho</option>
+            </select>
+        </div>
+        <br />
+        <div>
+            Texto:
+            <input id="Texto" type="text" valueFor="text" />
+        </div>
+    </div>
+</body>
+
+</html>
